@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerView : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField]
+	private AnimatorController _hairAnimator;
+	[SerializeField]
+	private AnimatorController _headAnimator;
+	[SerializeField]
+	private AnimatorController _armsAnimator;
+	[SerializeField]
+	private AnimatorController _bodyAnimator;
+	[SerializeField]
+	private AnimatorController _bootsAnimator;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	
+	
 }
