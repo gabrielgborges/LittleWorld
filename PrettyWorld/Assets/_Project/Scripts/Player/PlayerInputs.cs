@@ -33,7 +33,6 @@ public class PlayerInputs : MonoBehaviour
       _moveButtonsPressed++;
       if (!_isReadingInputs)
       {
-         Debug.Log("Startei");
          _isReadingInputs = true;
          StartCoroutine(ReadMovements());
       }

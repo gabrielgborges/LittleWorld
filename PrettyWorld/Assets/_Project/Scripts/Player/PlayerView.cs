@@ -37,17 +37,17 @@ public class PlayerView : MonoBehaviour
 
 	public void WalkForward()
 	{
-		TriggerFullBodyAnimation("Front");
+		TriggerFullBodyAnimation("Back");
 	}
 	
 	public void WalkBackward()
 	{
-		TriggerFullBodyAnimation("Back");
+		TriggerFullBodyAnimation("Front");
 	}
 
 	private void TriggerFullBodyAnimation(string trigger)
 	{
 		_bodyAnimator.SetTrigger(trigger);
-
+		_hairAnimator.SetTrigger(trigger);
 	}
 }
