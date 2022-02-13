@@ -7,10 +7,11 @@ using UnityEngine.InputSystem;
 public class PlayerInputs : MonoBehaviour
 {
    public Action<Vector2> OnPressToMoveSideways;
-   public Action<Vector2> OnPressToMoveHeightways;
+   public Action OnStopToMove;
    
    private PlayerControls _controllers;
    private int _moveButtonsPressed = 0;
+   private bool _isReadingInputs = false;
 
    public void Initialize()
    {
@@ -20,8 +21,8 @@ public class PlayerInputs : MonoBehaviour
       }
       _controllers = new PlayerControls();
       _controllers.Enable();
-      _controllers.Standard.MoveSideWays.started += StartMoveHandler;
-      _controllers.Standard.MoveHeightWays.started += StartMoveHandler;
+      _controllers.Standard.MoveSideWays.performed += StartMoveHandler;
+      _controllers.Standard.MoveHeightWays.performed += StartMoveHandler;
       _controllers.Standard.MoveSideWays.canceled += StopMoveHandler;
       _controllers.Standard.MoveHeightWays.canceled += StopMoveHandler;
 
@@ -30,12 +31,16 @@ public class PlayerInputs : MonoBehaviour
    private void StartMoveHandler(InputAction.CallbackContext receiver)
    {
       _moveButtonsPressed++;
-      StartCoroutine(ReadMovements());
+      if (!_isReadingInputs)
+      {
+         Debug.Log("Startei");
+         _isReadingInputs = true;
+         StartCoroutine(ReadMovements());
+      }
    }
 
    private void StopMoveHandler(InputAction.CallbackContext receiver)
    {
-      Debug.Log("Stopped");
       _moveButtonsPressed--;
    }
 
@@ -49,7 +54,8 @@ public class PlayerInputs : MonoBehaviour
       }
       else
       {
-        
+         _isReadingInputs = false;
+         OnStopToMove?.Invoke();
       }
    }
 }

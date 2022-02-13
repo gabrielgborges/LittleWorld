@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &99682773
 Transform:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &668784420
 Transform:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &774869570
 Transform:
   m_ObjectHideFlags: 0
@@ -1132,11 +1132,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6113693973a2f4aa8ec0db43f5b1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hairAnimator: {fileID: 0}
-  _headAnimator: {fileID: 0}
-  _armsAnimator: {fileID: 0}
-  _bodyAnimator: {fileID: 0}
-  _bootsAnimator: {fileID: 0}
+  _renderers:
+  - {fileID: 774869571}
+  - {fileID: 668784421}
+  - {fileID: 1896940613}
+  - {fileID: 364396827}
+  - {fileID: 99682774}
+  _hairAnimator: {fileID: 774869572}
+  _headAnimator: {fileID: 668784422}
+  _armsAnimator: {fileID: 1896940612}
+  _bodyAnimator: {fileID: 364396828}
+  _bootsAnimator: {fileID: 99682775}
 --- !u!114 &865673573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6245,7 +6251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1896940611
 Transform:
   m_ObjectHideFlags: 0
