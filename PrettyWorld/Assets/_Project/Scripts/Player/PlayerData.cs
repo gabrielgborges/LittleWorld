@@ -6,16 +6,9 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
 	[SerializeField]
-	private PlayerControls _controllers;
-	[SerializeField]
 	private float _verticalSpeed;
 	[SerializeField]
 	private float _horizontalSpeed;
-
-	public PlayerControls Controllers
-	{
-		get { return _controllers; }
-	}
 
 	public float HorizontalSpeed
 	{
