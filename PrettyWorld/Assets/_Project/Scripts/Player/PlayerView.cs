@@ -49,5 +49,6 @@ public class PlayerView : MonoBehaviour
 	{
 		_bodyAnimator.SetTrigger(trigger);
 		_hairAnimator.SetTrigger(trigger);
+		_headAnimator.SetTrigger(trigger);
 	}
 }
