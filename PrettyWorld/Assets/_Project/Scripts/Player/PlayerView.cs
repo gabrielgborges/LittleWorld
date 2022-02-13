@@ -47,6 +47,8 @@ public class PlayerView : MonoBehaviour
 
 	private void TriggerFullBodyAnimation(string trigger)
 	{
+		_armsAnimator.SetTrigger(trigger);
+		_bootsAnimator.SetTrigger(trigger);
 		_bodyAnimator.SetTrigger(trigger);
 		_hairAnimator.SetTrigger(trigger);
 		_headAnimator.SetTrigger(trigger);
