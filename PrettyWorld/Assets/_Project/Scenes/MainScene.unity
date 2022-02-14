@@ -1167,6 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f250cf33357dd74294537feefd4b414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _test: {fileID: 11400000, guid: 7bdce37889274ec48831e103ab122f44, type: 2}
   _configuration: {fileID: 11400000, guid: d1f111423544a304b90506eefccc3eeb, type: 2}
   _playerInputs: {fileID: 865673573}
   _playerView: {fileID: 865673572}

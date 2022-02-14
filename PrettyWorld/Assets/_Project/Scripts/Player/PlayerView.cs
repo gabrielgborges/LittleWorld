@@ -21,6 +21,28 @@ public class PlayerView : MonoBehaviour
 	[SerializeField]
 	private Animator _bootsAnimator;
 
+	public void SetUpCosmetic(CosmeticData cosmeticData)
+	{
+		switch (cosmeticData.CosmeticType)
+		{
+			case CosmeticType.HAIR:
+				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				break;
+			case CosmeticType.HEAD:
+				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				break;
+			case CosmeticType.ARMS:
+				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				break;
+			case CosmeticType.BODY:
+				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				break;
+			case CosmeticType.BOOTS:
+				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				break;
+		}
+	}
+	
 	public void PlayIdle()
 	{
 		TriggerFullBodyAnimation("Idle");

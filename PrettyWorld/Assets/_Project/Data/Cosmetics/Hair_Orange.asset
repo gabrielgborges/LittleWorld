@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e47446e27d134f887b5610e91e33a, type: 3}
+  m_Name: Hair_Orange
+  m_EditorClassIdentifier: 
+  _animations: {fileID: 9100000, guid: 0e7ce86f6367c474dbcbd955a7ecf87c, type: 2}
+  _sprite: {fileID: 8793915729297761979, guid: 51f4e3be5f9b27740b86b900f7058e5b, type: 3}
+  _name: Orange Hair
+  _price: 25
+  _cosmeticType: 0

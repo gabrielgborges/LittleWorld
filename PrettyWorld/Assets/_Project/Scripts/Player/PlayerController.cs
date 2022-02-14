@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
    [SerializeField]
+   private CosmeticData _test;
+   [SerializeField]
    private PlayerData _configuration;
    [SerializeField]
    private PlayerInputs _playerInputs;
