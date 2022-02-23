@@ -9,6 +9,8 @@ public class PlayerData : ScriptableObject
 	private float _verticalSpeed;
 	[SerializeField]
 	private float _horizontalSpeed;
+	[SerializeField]
+	private int _money;
 
 	public float HorizontalSpeed
 	{
@@ -18,5 +20,15 @@ public class PlayerData : ScriptableObject
 	public float VerticalSpeed
 	{
 		get { return _verticalSpeed; }
+	}
+
+	public int Money
+	{
+		get { return _money; }
+	}
+
+	public void BuyItem(int cost)
+	{
+		_money -= cost;
 	}
 }

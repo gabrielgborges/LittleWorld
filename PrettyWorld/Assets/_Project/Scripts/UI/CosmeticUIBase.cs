@@ -9,9 +9,9 @@ public class CosmeticUIBase : MonoBehaviour
     [SerializeField]
     private Button _cosmeticImage;
 
-    private CosmeticData _cosmetic;
+    protected CosmeticData _cosmetic;
 
-    public void SetUp(CosmeticData cosmetic)
+    public virtual void SetUp(CosmeticData cosmetic)
     {
         _cosmetic = cosmetic;
         _cosmeticImage.image.sprite = cosmetic.Sprite;

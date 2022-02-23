@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e2e47446e27d134f887b5610e91e33a, type: 3}
-  m_Name: Hair_Orange
+  m_Name: Body_Gray
   m_EditorClassIdentifier: 
-  _animations: {fileID: 9100000, guid: 0e7ce86f6367c474dbcbd955a7ecf87c, type: 2}
-  _sprite: {fileID: 8793915729297761979, guid: 51f4e3be5f9b27740b86b900f7058e5b, type: 3}
-  _name: Orange Hair
+  _animations: {fileID: 9100000, guid: b8a3be2d691162d418e640c701496efe, type: 2}
+  _sprite: {fileID: -5225540622116197949, guid: db6eff3e64be0b04c89493e3731ad8af, type: 3}
+  _name: Body Gray
   _price: 100
-  _cosmeticType: 0
+  _cosmeticType: 3

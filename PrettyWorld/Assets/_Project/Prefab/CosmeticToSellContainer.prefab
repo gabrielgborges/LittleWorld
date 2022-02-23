@@ -348,6 +348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cosmeticImage: {fileID: 7371201566794749970}
+  _buyButton: {fileID: 8317388298565613857}
+  _priceText: {fileID: 5734551591654969345}
 --- !u!1 &5865081106133634887
 GameObject:
   m_ObjectHideFlags: 0

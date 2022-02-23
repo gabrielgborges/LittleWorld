@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce48f3b972bafe448cf41a94e1cae35, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  _verticalSpeed: 0.3
-  _horizontalSpeed: 0.4
+  _verticalSpeed: 1
+  _horizontalSpeed: 1
+  _money: -200

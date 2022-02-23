@@ -5,16 +5,26 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
    [SerializeField]
-   private CosmeticData _test;
-   [SerializeField]
-   private PlayerData _configuration;
+   private PlayerData _data;
    [SerializeField]
    private PlayerInputs _playerInputs;
    [SerializeField]
    private PlayerView _playerView;
+   [SerializeField]
+   private List<CosmeticData> _currentCosmetics;
 
    private Vector2 _lastDirection = Vector2.zero;
    
+   public List<CosmeticData> CurrentCosmetics
+   {
+      get { return _currentCosmetics; }
+   }
+
+   public PlayerData Data
+   {
+      get { return _data; }
+   }
+
    public void Initialize()
    {
       _playerInputs.Initialize();
@@ -22,9 +32,15 @@ public class PlayerController : MonoBehaviour
       _playerInputs.OnStopToMove = IdleHandler;
    }
 
+   public void EquipBoughtItem(CosmeticData item)
+   {
+      _data.BuyItem(item.Price);
+      _playerView.SetUpCosmetic(item);
+   }
+   
    private void Move(Vector2 axis)
    {
-      transform.position += new Vector3{ x = axis.x * _configuration.HorizontalSpeed, y = axis.y * _configuration.VerticalSpeed, z = 0} * Time.deltaTime;
+      transform.position += new Vector3{ x = axis.x * _data.HorizontalSpeed, y = axis.y * _data.VerticalSpeed, z = 0} * Time.deltaTime;
       PlayWalkAnimation(axis);
       _lastDirection = axis;
    }

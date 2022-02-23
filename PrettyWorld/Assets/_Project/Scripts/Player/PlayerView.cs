@@ -29,16 +29,16 @@ public class PlayerView : MonoBehaviour
 				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
 				break;
 			case CosmeticType.HEAD:
-				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				_headAnimator.runtimeAnimatorController = cosmeticData.Animations;
 				break;
 			case CosmeticType.ARMS:
-				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				_armsAnimator.runtimeAnimatorController = cosmeticData.Animations;
 				break;
 			case CosmeticType.BODY:
-				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				_bodyAnimator.runtimeAnimatorController = cosmeticData.Animations;
 				break;
 			case CosmeticType.BOOTS:
-				_hairAnimator.runtimeAnimatorController = cosmeticData.Animations;
+				_bootsAnimator.runtimeAnimatorController = cosmeticData.Animations;
 				break;
 		}
 	}
